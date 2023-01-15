@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto-Recycling</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <button type="" class="addBtn">Add part</button>
+
+      <div class="container">
+        <form action="" class="search-bar" id="search">
+          <input type="text" placeholder="search" name="q" />
+          <button type="submit"><img src="search.png" /></button>
+        </form>
+      </div>
+    </header>
+    <section id="content">
+      <div id="side" class="sidebar">
+        <ul>
+          <li>
+            <a href="#" data-page="Ford"><i class="fas fa-"></i> Ford</a>
+          </li>
+          <li>
+            <a href="#" data-page="Tesla"><i class="fas fa-"></i> Tesla</a>
+          </li>
+          <li>
+            <a href="#" data-page="BMW"><i class="fas fa-"></i> BMW</a>
+          </li>
+          <li>
+            <a href="#" data-page="Mercedes"
+              ><i class="fas fa-"></i> Mercedes</a
+            >
+          </li>
+          <li>
+            <a href="#" data-page="Audi"><i class="fas fa-"></i> Audi</a>
+          </li>
+          <li>
+            <a href="#" data-page="Opel"><i class="fas fa-"></i> Opel</a>
+          </li>
+          <li>
+            <a href="#" data-page="Toyota"><i class="fas fa-"></i> Toyota</a>
+          </li>
+        </ul>
+      </div>
+      <div id="info">
+        <form action="" method="" id="editForm">
+          <table id="partList" border="1">
+            <thead>
+              <tr>
+                <th>Brand</th>
+                <th>Model</th>
+                <th>Part</th>
+                <th></th>
+              </tr>
+            </thead>
+
+            <tbody></tbody>
+          </table>
+        </form>
+        <div class="modal hidden">
+          <button class="close-modal">&times;</button>
+          <h1>Please Add Part</h1>
+          <div id="addParts">
+            <form action="" method="" id="edit">
+              <input
+                class="input make"
+                type="text"
+                required
+                name="make"
+                placeholder="Make"
+              />
+              <input
+                class="input model"
+                type="text"
+                required
+                name="model"
+                placeholder="Model"
+              />
+              <input
+                class="input part"
+                type="text"
+                required
+                name="part"
+                placeholder="Part"
+              />
+              <button class="save-part" type="submit">💾</button>
+            </form>
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
+      </div>
+    </section>
+  </body>
+  <footer id="footer">
+    <p style="margin: 2px">
+      <a target="_blank" href="https://www.instagram.com">Instagram</a>
+      <a target="_blank" href="https://www.facebook.com">Facebook</a>
+    </p>
+    <p id="Info">Domain owned by Auto Recycling Productions</p>
+  </footer>
+  <script src="index.js"></script>
+</html>
